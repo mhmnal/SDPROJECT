@@ -1,4 +1,4 @@
-package com.example.sdproject;
+package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
 
