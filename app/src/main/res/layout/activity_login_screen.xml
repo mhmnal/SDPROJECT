@@ -2,9 +2,10 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/font"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#e5e5dc"
+    android:background="#F1ECC3"
     tools:context=".LoginScreen">
 
     <androidx.cardview.widget.CardView
@@ -24,47 +25,51 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="580dp"
-            app:cardBackgroundColor="#26495c"
             android:layout_marginTop="50dp"
+            app:cardBackgroundColor="#57837B"
             app:cardCornerRadius="20dp">
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_marginHorizontal="20dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="50dp"
-                android:background="@drawable/edittextbg"
-                android:hint="Your Email"
-                android:padding="10dp"
-                android:fontFamily="@font/gtpressuraregular"
-                android:textColorHint="#26495c"/>
+                <EditText
+                    android:id="@+id/etemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="50dp"
+                    android:background="@drawable/edittextbg"
+                    android:fontFamily="@font/gtpressuraregular"
+                    android:hint="your email"
+                    android:padding="10dp"
+                    android:textColorHint="#515E63" />
 
-            <EditText
-                android:inputType="textPassword"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginHorizontal="20dp"
-                android:layout_marginTop="130dp"
-                android:hint="Your Password"
-                android:padding="10dp"
-                android:background="@drawable/edittextbg"
-                android:fontFamily="@font/gtpressuraregular"
-                android:textColorHint="#26495c"/>
+                <EditText
+                    android:id="@+id/etpassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="130dp"
+                    android:background="@drawable/edittextbg"
+                    android:fontFamily="@font/gtpressuraregular"
+                    android:hint="your password"
+                    android:inputType="textPassword"
+                    android:padding="10dp"
+                    android:textColorHint="#515E63" />
 
                 <Button
-                    android:width="200dp"
-                    android:id="@+id/button"
-                    android:layout_marginLeft="20dp"
-                    android:text="Login"
-                    android:fontFamily="@font/gtpressurabold"
+                    android:id="@+id/btnlogin"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
                     android:layout_marginTop="200dp"
-                    android:background="@drawable/btnbg" />
+                    android:width="200dp"
+                    android:background="@drawable/btnbg"
+                    android:elevation="10dp"
+                    android:fontFamily="@font/gtpressurabold"
+                    android:text="Login"
+                    android:textColor="#F1ECC3" />
 
                 <TextView
                     android:id="@+id/registertxt"
@@ -72,20 +77,21 @@
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
                     android:layout_marginTop="350dp"
-                    android:fontFamily="@font/fjord_one"
+                    android:fontFamily="@font/gtpressurabold"
                     android:text="Register"
-                    android:textColor="#e5e5dc"
-                    android:textSize="14sp" />
+                    android:textColor="#C9D8B6"
+                    android:textSize="17sp" />
 
                 <TextView
+                    android:id="@+id/txtfgtpass"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="260dp"
                     android:layout_marginTop="350dp"
-                    android:textColor="#e5e5dc"
-                    android:textSize="14sp"
-                    android:fontFamily="@font/fjord_one"
-                    android:layout_marginLeft="280dp"
-                    android:text="Forgot Password"/>
+                    android:fontFamily="@font/gtpressurabold"
+                    android:text="Forgot Password"
+                    android:textColor="#C9D8B6"
+                    android:textSize="17sp" />
 
 
             </RelativeLayout>
@@ -97,12 +103,12 @@
     <TextView
         android:id="@+id/txtlogin"
         android:layout_width="378dp"
-        android:layout_height="50dp"
+        android:layout_height="100dp"
         android:layout_marginLeft="20dp"
-        android:fontFamily="@font/playfair_display"
+        android:fontFamily="@font/beautymountains"
         android:text="Log-In"
         android:textColor="#000000"
-        android:textSize="40dp"
+        android:textSize="65dp"
         app:layout_constraintBottom_toTopOf="@+id/cardView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
