@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "972224189077",
+    "firebase_url": "https://habit-tracker-50035-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "habit-tracker-50035",
+    "storage_bucket": "habit-tracker-50035.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972224189077:android:a0ffd24c8e26e007a5c19c",
+        "android_client_info": {
+          "package_name": "com.example.habittracker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972224189077-q6da7fdpfgv7i0o2pmtoqovvdlk6s60f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfTgEL5Vx4Aw9NlIY6ClTXTso-w5Ci0Q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972224189077-fai6lvsbokann7ismdib15fk2bol6e3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:972224189077:android:9dd784b492a675dca5c19c",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "972224189077-q6da7fdpfgv7i0o2pmtoqovvdlk6s60f.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAfTgEL5Vx4Aw9NlIY6ClTXTso-w5Ci0Q0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "972224189077-fai6lvsbokann7ismdib15fk2bol6e3u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

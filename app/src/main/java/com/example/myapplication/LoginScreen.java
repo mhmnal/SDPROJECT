@@ -12,6 +12,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInClient;
+import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
+import com.google.android.gms.common.SignInButton;
+import com.google.android.gms.common.api.ApiException;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -22,10 +28,15 @@ import org.w3c.dom.Text;
 
 public class LoginScreen extends AppCompatActivity {
 
-    private Button login;
+    private Button login ;
     private EditText email,password;
     private TextView forgotpassword,register;
-    private FirebaseAuth mAuth;
+     FirebaseAuth mAuth;
+    private SignInButton mSignIn;
+    private GoogleSignInClient mGoogleSignInClient;
+    private int RC_SIGN_IN = 0;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,26 +49,23 @@ public class LoginScreen extends AppCompatActivity {
         password = findViewById(R.id.etpassword);
         forgotpassword = findViewById(R.id.txtfgtpass);
         register = findViewById(R.id.registertxt);
+        mSignIn = findViewById(R.id.sign_in_button);
 
-
-        //import firebase funct.
-    /*    mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();
 
-        //If the user alr signed in, direct to dashboard.
         if (user != null) {
             finish();
             startActivity(new Intent(LoginScreen.this, MainActivity.class));
-        }*/
+        }
 
-        //direct the buttons and funct to another interface
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //validate(email.getText().toString(), password.getText().toString());
-                startActivity(new Intent(LoginScreen.this, MainActivity.class));
+                validate(email.getText().toString(), password.getText().toString());
             }
         });
+
         register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -65,11 +73,10 @@ public class LoginScreen extends AppCompatActivity {
             }
         });
 
-
-
     }
 
-  /*  private void validate(String userName, String userPassword) {
+    private void validate(String userName, String userPassword) {
+
         mAuth.signInWithEmailAndPassword(userName, userPassword).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
@@ -77,24 +84,33 @@ public class LoginScreen extends AppCompatActivity {
                     checkEmailVerification();
                 } else {
                     Toast.makeText(LoginScreen.this, "Login Failed", Toast.LENGTH_SHORT).show();
+
                 }
             }
+
         });
+
     }
 
-    private void checkEmailVerification(){
+
+    private void checkEmailVerification() {
         FirebaseUser firebaseUser = mAuth.getInstance().getCurrentUser();
         Boolean emailflag = firebaseUser.isEmailVerified();
 
         if (emailflag) {
             finish();
-            startActivity(new Intent(LoginScreen.this,MainActivity.class));
+            startActivity(new Intent(LoginScreen.this, MainActivity.class));
         } else {
-            Toast.makeText(this, "Verify Email", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Verify email", Toast.LENGTH_SHORT).show();
             mAuth.signOut();
         }
+    }
 
 
-    }*/
+
+
+
+
 
 }
+
