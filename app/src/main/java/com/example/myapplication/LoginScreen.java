@@ -32,9 +32,8 @@ public class LoginScreen extends AppCompatActivity {
     private EditText email,password;
     private TextView forgotpassword,register;
      FirebaseAuth mAuth;
-    private SignInButton mSignIn;
-    private GoogleSignInClient mGoogleSignInClient;
-    private int RC_SIGN_IN = 0;
+
+
 
 
 
@@ -49,7 +48,6 @@ public class LoginScreen extends AppCompatActivity {
         password = findViewById(R.id.etpassword);
         forgotpassword = findViewById(R.id.txtfgtpass);
         register = findViewById(R.id.registertxt);
-        mSignIn = findViewById(R.id.sign_in_button);
 
         mAuth = FirebaseAuth.getInstance();
         FirebaseUser user = mAuth.getCurrentUser();

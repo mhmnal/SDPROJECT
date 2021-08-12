@@ -17,13 +17,24 @@ import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
 
 public class Profile extends AppCompatActivity {
 
-    private Button signout;
-    private TextView name,email,id;
-    private ImageView image;
-    private GoogleSignInClient mGoogleSignInClient;
+    private ImageView profilePic;
+    private TextView profileName, profileEmail;
+    private Button profileUpdate, changePassword,back;
+    private FirebaseAuth firebaseAuth;
+    private FirebaseDatabase firebaseDatabase;
+    private FirebaseStorage firebaseStorage;
+    private StorageReference storageReference;
+    private static int PICK_IMAGE = 123;
+    Uri imagePath;
+
+
 
 
     @Override
@@ -31,59 +42,18 @@ public class Profile extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_profile);
 
+        profilePic = findViewById(R.id.imagepf);
+        profileName = findViewById(R.id.namepf);
+        profileEmail = findViewById(R.id.emailpf);
+        profileUpdate = findViewById(R.id.editpf);
+        changePassword = findViewById(R.id.cgpasswordpf);
+        back = findViewById(R.id.backpf);
 
-        // Configure sign-in to request the user's ID, email address, and basic
-        // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
-        GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-                .requestEmail()
-                .build();
-
-        // Build a GoogleSignInClient with the options specified by gso.
-        mGoogleSignInClient = GoogleSignIn.getClient(this, gso);
-
-
-        signout = findViewById(R.id.signoutpf);
-        name = findViewById(R.id.namepf);
-        email = findViewById(R.id.emailpf);
-        id = findViewById(R.id.idpf);
-        image = findViewById(R.id.imagepf);
-
-        signout.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                switch (view.getId()) {
-                    case R.id.signoutpf:
-                        signOut();
-                        break;
-                }
-            }
-        });
-
-        GoogleSignInAccount acct = GoogleSignIn.getLastSignedInAccount(this);
-        if (acct != null) {
-            String personName = acct.getDisplayName();
-            String personGivenName = acct.getGivenName();
-            String personFamilyName = acct.getFamilyName();
-            String personEmail = acct.getEmail();
-            String personId = acct.getId();
-            Uri personPhoto = acct.getPhotoUrl();
-
-            name.setText(personName);
-            email.setText(personEmail);
-
-            Glide.with(this).load(String.valueOf(personPhoto)).into(image);
-        }
+        firebaseAuth = FirebaseAuth.getInstance();
+        firebaseDatabase = FirebaseDatabase.getInstance();
+        firebaseStorage = FirebaseStorage.getInstance();
 
     }
 
-    private void signOut() {
-        mGoogleSignInClient.signOut()
-                .addOnCompleteListener(this, new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        // ...
-                        finish();
-                    }
-                });
-    }
+
 }
