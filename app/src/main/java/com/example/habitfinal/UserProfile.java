@@ -1,4 +1,4 @@
-package com.example.myapplication;
+package com.example.habitfinal;
 
 public class UserProfile {
 
