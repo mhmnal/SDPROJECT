@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Habitfinal">
         <activity
+            android:name=".ShowHabit"
+            android:exported="true" />
+        <activity
+            android:name=".CreateHabit2"
+            android:exported="true" />
+        <activity
+            android:name=".CreateHabit"
+            android:exported="true" />
+        <activity
             android:name=".ProfileActivity"
             android:exported="true" />
         <activity android:name=".DashboardActivity" />
