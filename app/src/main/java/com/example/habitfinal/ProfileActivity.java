@@ -31,8 +31,8 @@ public class ProfileActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private ImageView profilePic;
-    private TextView profileName, profileEmail;
-    private Button profileUpdate, changePassword,back,signout;
+    private TextView profileName, profileEmail,changePassword;
+    private Button profileUpdate,back,signout;
     private FirebaseDatabase firebaseDatabase;
     private FirebaseStorage firebaseStorage;
     private StorageReference storageReference;
@@ -48,6 +48,8 @@ public class ProfileActivity extends AppCompatActivity {
         profilePic = findViewById(R.id.imgpa);
         profileName = findViewById(R.id.etnamepa);
         profileEmail = findViewById(R.id.etemailpa);
+        profileUpdate = findViewById(R.id.pfeditprofile);
+        changePassword = findViewById(R.id.pachangepassword);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
@@ -98,6 +100,14 @@ public class ProfileActivity extends AppCompatActivity {
                 firebaseAuth.signOut();
                 finish();
                 startActivity(new Intent(ProfileActivity.this, MainActivity.class));
+            }
+        });
+
+
+        profileUpdate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, EditProfile.class));
             }
         });
 
