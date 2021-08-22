@@ -3,6 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_edit_password.xml" value="0.278125" />
+        <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_edit_profile.xml" value="0.33" />
+        <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_forgot_password.xml" value="0.33" />
+        <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_profile.xml" value="0.278125" />
+        <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_show_habit.xml" value="0.1838768115942029" />
+        <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_specific_habit.xml" value="0.1838768115942029" />
         <entry key="..\:/Users/mhmni/Documents/SDPROJECT/app/src/main/res/layout/activity_create_habit.xml" value="0.25" />
         <entry key="..\:/Users/mhmni/Documents/SDPROJECT/app/src/main/res/layout/activity_create_habit2.xml" value="0.25" />
         <entry key="..\:/Users/mhmni/Documents/SDPROJECT/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
