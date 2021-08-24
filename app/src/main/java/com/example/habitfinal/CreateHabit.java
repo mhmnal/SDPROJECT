@@ -55,7 +55,7 @@ public class CreateHabit extends AppCompatActivity {
             @Override
             public void onClick(View view) {
             if(validate()){
-                databaseReference = FirebaseDatabase.getInstance().getReference("Habit").child("test").push();
+                databaseReference = FirebaseDatabase.getInstance().getReference("Habit").child(name).push();
 
                 nameHabit = namehabit.getEditableText().toString().trim();
                 motiv = motiva.getEditableText().toString().trim();
