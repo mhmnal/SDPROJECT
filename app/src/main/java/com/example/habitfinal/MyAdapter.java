@@ -19,12 +19,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     Context context;
 
 
+
     ArrayList<cHabitInfo> list;
 
     public MyAdapter(Context context, ArrayList<cHabitInfo> list) {
         this.context = context;
         this.list = list;
     }
+
 
     @NonNull
     @Override
@@ -52,11 +54,17 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         TextView namehabittrv;
 
+
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             namehabittrv = itemView.findViewById(R.id.namehabitrv);
 
+
         }
+
+
     }
+
+
 }

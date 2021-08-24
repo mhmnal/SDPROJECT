@@ -1,11 +1,14 @@
 package com.example.habitfinal;
 
+import static android.content.ContentValues.TAG;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -20,7 +23,7 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-public class ShowHabit extends AppCompatActivity {
+public class ShowHabit extends AppCompatActivity{
 
     String name;
     RecyclerView recyclerView;
@@ -59,7 +62,7 @@ public class ShowHabit extends AppCompatActivity {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list = new ArrayList<>();
-        myAdapter = new MyAdapter( this, list);
+        myAdapter = new MyAdapter(this, list);
         recyclerView.setAdapter(myAdapter);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -80,4 +83,6 @@ public class ShowHabit extends AppCompatActivity {
             }
         });
     }
+
+
 }
