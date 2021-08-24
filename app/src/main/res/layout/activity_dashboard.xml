@@ -46,7 +46,7 @@
         android:id="@+id/textView"
         android:layout_width="62dp"
         android:layout_height="16dp"
-        android:text="TextView"
+        android:text="Dashboard"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         tools:layout_editor_absoluteY="119dp" />
