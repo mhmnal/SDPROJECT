@@ -3,6 +3,25 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/custom_input.xml" value="0.2875" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/custom_input_2.xml" value="0.290625" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/custom_lock_icon.xml" value="0.290625" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/custom_person_icon.xml" value="0.290625" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/ic_email.xml" value="0.2875" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/ic_lock.xml" value="0.2875" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/ic_lock_focused.xml" value="0.2875" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/ic_person.xml" value="0.2875" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/drawable/ic_person_focused.xml" value="0.290625" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_create_habit.xml" value="0.2658514492753623" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_create_habit2.xml" value="0.2658514492753623" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_dashboard.xml" value="0.2658514492753623" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_edit_password.xml" value="0.264" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_edit_profile.xml" value="0.2658514492753623" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_profile.xml" value="0.2658514492753623" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_register.xml" value="0.2658514492753623" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_show_habit.xml" value="0.2658514492753623" />
+        <entry key="..\:/Users/aafiqz/OneDrive/Desktop/SDPROJECT2/app/src/main/res/layout/activity_specific_habit.xml" value="0.2658514492753623" />
         <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_edit_password.xml" value="0.278125" />
         <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_edit_profile.xml" value="0.33" />
         <entry key="..\:/Users/mhmni/Documents/GitHub/SDPROJECT1/app/src/main/res/layout/activity_forgot_password.xml" value="0.33" />
@@ -20,7 +39,7 @@
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

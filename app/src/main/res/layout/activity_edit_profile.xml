@@ -21,11 +21,16 @@
 
     <EditText
         android:id="@+id/epname"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="37dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:drawablePadding="8dp"
         android:ems="10"
         android:hint="Name"
         android:inputType="textPersonName"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
@@ -35,13 +40,17 @@
 
     <EditText
         android:id="@+id/epemail"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="220dp"
+        android:layout_height="37dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_person_icon"
         android:layout_marginTop="32dp"
+        android:drawablePadding="8dp"
         android:ems="10"
-        android:enabled="false"
         android:hint="Email Address"
         android:inputType="none"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
@@ -51,21 +60,24 @@
 
     <Button
         android:id="@+id/epconfirm"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="104dp"
+        android:background="@drawable/custom_input_2"
         android:text="confirm"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.669"
+        app:layout_constraintHorizontal_bias="0.729"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/epchangepassword" />
+        app:layout_constraintTop_toBottomOf="@+id/epchangepassword"
+        app:layout_constraintVertical_bias="0.52" />
 
     <Button
         android:id="@+id/epback"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="115dp"
+        android:layout_height="39dp"
+        android:background="@drawable/custom_input_2"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="104dp"
         android:text="Back"
@@ -77,8 +89,9 @@
 
     <Button
         android:id="@+id/epchangepassword"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="39dp"
+        android:background="@drawable/custom_input_2"
         android:layout_marginTop="27dp"
         android:text="change password"
         app:layout_constraintBottom_toBottomOf="parent"
