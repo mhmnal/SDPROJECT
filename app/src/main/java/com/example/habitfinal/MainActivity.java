@@ -20,7 +20,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class MainActivity extends AppCompatActivity {
 
-    private Button signup,signin;
+    private Button signup,signin,forgot;
     private EditText email,password;
     private FirebaseAuth fAuth;
 
@@ -33,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
         signin = findViewById(R.id.signin);
         email = findViewById(R.id.emaillg);
         password = findViewById(R.id.passwordlg);
+        forgot = findViewById(R.id.mainforgot);
 
         fAuth = FirebaseAuth.getInstance();
         FirebaseUser user = fAuth.getCurrentUser();
@@ -55,6 +56,15 @@ public class MainActivity extends AppCompatActivity {
                 validate(email.getText().toString(), password.getText().toString());
             }
         });
+
+        forgot.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, ForgotPasswordActivity.class));
+            }
+        });
+
+
 
 
 

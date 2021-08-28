@@ -10,10 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Habitfinal">
         <activity
+            android:name=".ForgotPasswordActivity"
+            android:exported="true" />
+        <activity
             android:name=".EditProfile"
             android:exported="true" />
         <activity
-                android:name=".EditPassword"
+            android:name=".EditPassword"
             android:exported="true" />
         <activity
             android:name=".SpecificHabit"
