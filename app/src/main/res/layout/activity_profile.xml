@@ -5,17 +5,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ProfileActivity"
-    android:background="@drawable/gradient_background">
+    android:background="@color/softwhite1">
 
     <Button
         android:id="@+id/btnsignout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:layout_marginTop="35dp"
+        android:backgroundTint="#ee6c4d"
+        android:textColor="@color/softwhite1"
         android:text="Sign Out"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.669"
+        app:layout_constraintHorizontal_bias="0.682"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pfeditprofile"
         app:layout_constraintVertical_bias="0.0" />
@@ -34,11 +37,14 @@
 
     <EditText
         android:id="@+id/etnamepa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
         android:ems="10"
-        android:inputType="none"
         android:enabled="false"
+        android:inputType="none"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -48,24 +54,30 @@
 
     <EditText
         android:id="@+id/etemailpa"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="240dp"
+        android:layout_height="40dp"
         android:ems="10"
         android:enabled="false"
         android:inputType="none"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etnamepa"
-        app:layout_constraintVertical_bias="0.1" />
+        app:layout_constraintVertical_bias="0.092" />
 
     <Button
         android:id="@+id/pfeditprofile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="140dp"
+        android:layout_height="50dp"
         android:layout_marginTop="71dp"
+        android:backgroundTint="#ee6c4d"
+        android:textColor="@color/softwhite1"
         android:text="Edit profile"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.681"

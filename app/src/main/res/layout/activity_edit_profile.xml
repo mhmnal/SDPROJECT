@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".EditProfile"
-    android:background="@drawable/gradient_background">
+    android:background="@color/softwhite1">
 
     <ImageView
         android:id="@+id/epimg"
@@ -21,8 +21,8 @@
 
     <EditText
         android:id="@+id/epname"
-        android:layout_width="220dp"
-        android:layout_height="37dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_person_icon"
         android:drawablePadding="8dp"
@@ -31,19 +31,25 @@
         android:inputType="textPersonName"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
+        android:textColor="@color/softwhite1"
+        android:textColorHint="@color/softwhite1"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.492"
+        app:layout_constraintHorizontal_bias="0.491"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/epimg"
-        app:layout_constraintVertical_bias="0.135" />
+        app:layout_constraintVertical_bias="0.162" />
 
     <EditText
         android:id="@+id/epemail"
-        android:layout_width="220dp"
-        android:layout_height="37dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
         android:background="@drawable/custom_input"
         android:drawableStart="@drawable/custom_person_icon"
+        android:textColorHint="@color/softwhite1"
+        android:textColor="@color/softwhite1"
+        android:textSize="12dp"
         android:layout_marginTop="32dp"
         android:drawablePadding="8dp"
         android:ems="10"
@@ -60,12 +66,14 @@
 
     <Button
         android:id="@+id/epconfirm"
-        android:layout_width="115dp"
-        android:layout_height="39dp"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="104dp"
-        android:background="@drawable/custom_input_2"
+        android:backgroundTint="#ee6c4d"
         android:text="confirm"
+        android:textSize="14dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.729"
@@ -75,12 +83,14 @@
 
     <Button
         android:id="@+id/epback"
-        android:layout_width="115dp"
-        android:layout_height="39dp"
-        android:background="@drawable/custom_input_2"
+        android:layout_width="110dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ee6c4d"
         android:layout_marginTop="36dp"
         android:layout_marginBottom="104dp"
         android:text="Back"
+        android:textSize="14dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.278"
@@ -89,11 +99,13 @@
 
     <Button
         android:id="@+id/epchangepassword"
-        android:layout_width="200dp"
-        android:layout_height="39dp"
-        android:background="@drawable/custom_input_2"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:backgroundTint="#ee6c4d"
         android:layout_marginTop="27dp"
         android:text="change password"
+        android:textSize="10dp"
+        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
