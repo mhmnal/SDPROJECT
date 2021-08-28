@@ -31,7 +31,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     private FirebaseAuth firebaseAuth;
     private ImageView profilePic;
-    private TextView profileName, profileEmail,changePassword;
+    private TextView profileName, profileEmail;
     private Button profileUpdate,back,signout;
     private FirebaseDatabase firebaseDatabase;
     private FirebaseStorage firebaseStorage;
@@ -49,7 +49,6 @@ public class ProfileActivity extends AppCompatActivity {
         profileName = findViewById(R.id.etnamepa);
         profileEmail = findViewById(R.id.etemailpa);
         profileUpdate = findViewById(R.id.pfeditprofile);
-        changePassword = findViewById(R.id.pachangepassword);
 
         firebaseAuth = FirebaseAuth.getInstance();
         firebaseDatabase = FirebaseDatabase.getInstance();
