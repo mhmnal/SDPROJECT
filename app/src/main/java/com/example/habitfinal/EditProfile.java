@@ -36,8 +36,8 @@ import java.io.IOException;
 public class EditProfile extends AppCompatActivity {
 
     private EditText newUserName;
-    private TextView newUserEmail;
-    private Button save,back,cpassword;
+    private TextView newUserEmail,cpassword;
+    private Button save,back;
     private String name;
     private FirebaseAuth firebaseAuth;
     private FirebaseDatabase firebaseDatabase;

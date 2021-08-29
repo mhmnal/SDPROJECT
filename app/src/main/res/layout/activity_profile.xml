@@ -7,20 +7,44 @@
     tools:context=".ProfileActivity"
     android:background="@color/softwhite1">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnsignout"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="35dp"
-        android:backgroundTint="#ee6c4d"
-        android:textColor="@color/softwhite1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_input_2"
+        android:fontFamily="@font/fjord_one"
         android:text="Sign Out"
+        android:textColor="@color/black"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.682"
+        app:layout_constraintHorizontal_bias="0.674"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pfeditprofile"
+        app:layout_constraintVertical_bias="0.009" />
+
+    <EditText
+        android:id="@+id/etemailpa"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Email Address"
+        android:inputType="none"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/softwhite1"
+        android:textColorHint="@color/softwhite1"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etnamepa"
         app:layout_constraintVertical_bias="0.0" />
 
     <ImageView
@@ -37,14 +61,20 @@
 
     <EditText
         android:id="@+id/etnamepa"
-        android:layout_width="240dp"
-        android:layout_height="40dp"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/custom_input"
+        android:drawableStart="@drawable/custom_person_icon"
+        android:drawablePadding="8dp"
         android:ems="10"
-        android:enabled="false"
+        android:hint="Name"
         android:inputType="none"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="16dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textColor="@color/softwhite1"
+        android:textColorHint="@color/softwhite1"
+        android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
@@ -52,37 +82,21 @@
         app:layout_constraintTop_toBottomOf="@+id/imgpa"
         app:layout_constraintVertical_bias="0.065" />
 
-    <EditText
-        android:id="@+id/etemailpa"
-        android:layout_width="240dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:enabled="false"
-        android:inputType="none"
-        android:textAlignment="center"
-        android:textColor="@color/black"
-        android:textSize="16dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etnamepa"
-        app:layout_constraintVertical_bias="0.092" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/pfeditprofile"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="71dp"
-        android:backgroundTint="#ee6c4d"
-        android:textColor="@color/softwhite1"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input_2"
+        android:fontFamily="@font/fjord_one"
         android:text="Edit profile"
+        android:textColor="@color/black"
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.681"
+        app:layout_constraintHorizontal_bias="0.674"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etemailpa"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.136" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -7,7 +7,7 @@
     tools:context=".MainActivity"
     android:background="@color/softwhite1">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/registerlg"
         android:layout_width="150dp"
         android:layout_height="40dp"
@@ -15,7 +15,6 @@
         android:fontFamily="@font/fjord_one"
         android:text="Sign Up"
         android:textColor="@color/black"
-        app:backgroundTint="#ee6c4d"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.689"
@@ -23,14 +22,13 @@
         app:layout_constraintTop_toBottomOf="@+id/signin"
         app:layout_constraintVertical_bias="0.097" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signin"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_input_2"
         android:text="Log In"
         android:textColor="@color/black"
-        app:backgroundTint="#ee6c4d"
         android:fontFamily="@font/fjord_one"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,18 +84,18 @@
 
     <TextView
         android:id="@+id/textView4"
-        android:layout_width="200dp"
+        android:layout_width="260dp"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/fjord_one"
+        android:fontFamily="@font/dolcevita"
         android:text="WELCOME BACK!"
         android:textColor="@color/black"
-        android:textSize="50sp"
+        android:textSize="60sp"
         app:layout_constraintBottom_toBottomOf="@+id/emaillg"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.379"
+        app:layout_constraintHorizontal_bias="0.529"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.579" />
+        app:layout_constraintVertical_bias="0.565" />
 
     <TextView
         android:id="@+id/mainforgot"

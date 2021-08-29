@@ -7,60 +7,64 @@
     tools:context=".DashboardActivity"
     android:background="@color/softwhite1">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnprofile"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#ee6c4d"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
         android:text="Profile"
-        android:textColor="@color/softwhite1"
+        android:textColor="@color/black"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.839"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintVertical_bias="0.407" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/dbCreateHabit"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
-        android:text="Create habit"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
+        android:text="Create habit"
+        android:textColor="@color/black"
         android:textSize="12dp"
-        android:textColor="@color/softwhite1"
-        android:backgroundTint="#ee6c4d"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.807"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.743" />
+        app:layout_constraintVertical_bias="0.66" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/listhabit"
-        android:layout_width="140dp"
-        android:layout_height="50dp"
+        android:layout_width="130dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="30dp"
+        android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
         android:text="List habit"
+        android:textColor="@color/black"
         android:textSize="12dp"
-        android:textColor="@color/softwhite1"
-        android:backgroundTint="#ee6c4d"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.808"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.634" />
+        app:layout_constraintVertical_bias="0.407" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="170dp"
+        android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:fontFamily="@font/fjord_one"
-        android:text="Dashboard"
+        android:text="Dashboard W.I.P"
+        android:textColor="@color/black"
         android:textSize="34dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

@@ -50,11 +50,11 @@
         android:textColorHint="@color/softwhite1"
         android:textColor="@color/softwhite1"
         android:textSize="12dp"
+        android:inputType="textEmailAddress"
         android:layout_marginTop="32dp"
         android:drawablePadding="8dp"
         android:ems="10"
         android:hint="Email Address"
-        android:inputType="none"
         android:paddingStart="12dp"
         android:paddingEnd="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -64,52 +64,50 @@
         app:layout_constraintTop_toBottomOf="@+id/epname"
         app:layout_constraintVertical_bias="0.0" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/epconfirm"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="104dp"
-        android:backgroundTint="#ee6c4d"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input_2"
         android:text="confirm"
-        android:textSize="14dp"
         android:textColor="@color/black"
+        android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.729"
+        app:layout_constraintHorizontal_bias="0.685"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/epchangepassword"
-        app:layout_constraintVertical_bias="0.52" />
+        app:layout_constraintVertical_bias="0.046" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/epback"
-        android:layout_width="110dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#ee6c4d"
-        android:layout_marginTop="36dp"
-        android:layout_marginBottom="104dp"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input_2"
         android:text="Back"
+        android:textColor="@color/black"
         android:textSize="14dp"
-        android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintHorizontal_bias="0.685"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/epchangepassword" />
+        app:layout_constraintTop_toBottomOf="@+id/epchangepassword"
+        app:layout_constraintVertical_bias="0.276" />
 
-    <Button
+    <TextView
         android:id="@+id/epchangepassword"
-        android:layout_width="160dp"
-        android:layout_height="50dp"
-        android:backgroundTint="#ee6c4d"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="27dp"
+        android:backgroundTint="#ee6c4d"
+        android:fontFamily="@font/fjord_one"
         android:text="change password"
-        android:textSize="10dp"
         android:textColor="@color/black"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.722"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/epemail"
-        app:layout_constraintVertical_bias="0.029" />
+        app:layout_constraintVertical_bias="0.0" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

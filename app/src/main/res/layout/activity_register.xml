@@ -7,21 +7,21 @@
     tools:context=".RegisterActivity"
     android:background="@color/softwhite1">
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnsignup"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:layout_marginTop="26dp"
         android:background="@drawable/custom_input_2"
+        android:fontFamily="@font/fjord_one"
         android:text="Register"
         android:textColor="@color/black"
-        app:backgroundTint="#ee6c4d"
-        android:fontFamily="@font/fjord_one"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.685"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.828" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordrg"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/namerg"
