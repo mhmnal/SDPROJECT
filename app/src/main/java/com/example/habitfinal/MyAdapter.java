@@ -40,6 +40,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         cHabitInfo chabitInfo = list.get(position);
         holder.namehabittrv.setText(chabitInfo.getNameHabit());
+        holder.habittype.setText(chabitInfo.getText1());
 
 
 
@@ -53,12 +54,14 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
         TextView namehabittrv;
+        TextView habittype;
 
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
 
             namehabittrv = itemView.findViewById(R.id.namehabitrv);
+            habittype = itemView.findViewById(R.id.habittype);
 
 
         }

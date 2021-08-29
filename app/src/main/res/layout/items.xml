@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardviewshowhabit"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginHorizontal="30dp"
-    android:layout_marginTop="10dp"
-    android:background="@drawable/gradient_background">
+    android:layout_marginTop="10dp">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="wrap_content"
         android:background="@drawable/custom_input"
         android:orientation="vertical">
 
@@ -18,14 +18,7 @@
             android:layout_gravity="center_vertical"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="HABIT NAME :"
-                android:textColor="@color/softwhite1"
-                android:fontFamily="@font/fjord_one"
-                android:paddingStart="10dp"
-                android:textSize="25sp"/>
+
 
             <TextView
                 android:id="@+id/namehabitrv"
@@ -39,10 +32,32 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="habit type:"
+                android:textColor="@color/softwhite1"
+                android:fontFamily="@font/fjord_one"
+                android:paddingStart="10dp"
+                android:textSize="25sp"/>
 
+            <TextView
+                android:id="@+id/habittype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="name"
+                android:layout_marginLeft="10dp"
+                android:textColor="@color/softwhite1"
+                android:fontFamily="@font/fjord_one"
+                android:textSize="25sp"/>
 
-
+        </LinearLayout>
 
     </LinearLayout>
 

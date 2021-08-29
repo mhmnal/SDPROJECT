@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">habitfinal</string>
+
+    <string-array name="planets_array">
+        <item>General</item>
+        <item>Food</item>
+        <item>Habits</item>
+        <item>Travel</item>
+        <item>Chores</item>
+    </string-array>
+
 </resources>

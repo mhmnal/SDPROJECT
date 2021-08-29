@@ -21,7 +21,7 @@ import java.util.regex.Pattern;
 
 public class EditPassword extends AppCompatActivity {
 
- /*   private static final Pattern PASSWORD_PATTERN =
+    private static final Pattern PASSWORD_PATTERN =
             Pattern.compile("^" +
                     "(?=.*[0-9])" +         //at least 1 digit
                     "(?=.*[a-z])" +         //at least 1 lower case letter
@@ -35,16 +35,16 @@ public class EditPassword extends AppCompatActivity {
     private EditText newPassword;
     private FirebaseUser firebaseUser;
     private FirebaseAuth firebaseAuth;
-    private FirebaseDatabase firebaseDatabase;*/
+    private FirebaseDatabase firebaseDatabase;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_edit_password);
 
-    /*    update = findViewById(R.id.egconfirm);
+        update = findViewById(R.id.egconfirm);
         newPassword = findViewById(R.id.egchange);
-        back = findViewById(R.id.egback);
+        back = findViewById(R.id.epback);
 
         firebaseUser = FirebaseAuth.getInstance().getCurrentUser();
         firebaseAuth = FirebaseAuth.getInstance();
@@ -77,10 +77,10 @@ public class EditPassword extends AppCompatActivity {
             }
         });
 
-*/
+
     }
 
-   /* @Override
+    @Override
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
         switch (item.getItemId()) {
             case android.R.id.home:
@@ -101,5 +101,5 @@ public class EditPassword extends AppCompatActivity {
             newPassword.setError(null);
             return true;
         }
-    }*/
+    }
 }

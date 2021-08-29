@@ -7,8 +7,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -25,7 +28,8 @@ import java.util.ArrayList;
 
 public class ShowHabit extends AppCompatActivity{
 
-    String name;
+    String name,habittype;
+    private Button back;
     RecyclerView recyclerView;
     DatabaseReference databaseReference;
     MyAdapter myAdapter;
@@ -38,6 +42,7 @@ public class ShowHabit extends AppCompatActivity{
         setContentView(R.layout.activity_show_habit);
 
         recyclerView = findViewById(R.id.recyclerviewhabit);
+        back = findViewById(R.id.shback);
         firebaseAuth = FirebaseAuth.getInstance();
         DatabaseReference reference2 = FirebaseDatabase.getInstance().getReference("UserInfo").child(firebaseAuth.getUid());
 
@@ -47,11 +52,19 @@ public class ShowHabit extends AppCompatActivity{
 
                 name = snapshot.child("userName").getValue().toString();
                 database();
+
             }
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
 
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ShowHabit.this, DashboardActivity.class));
             }
         });
     }
