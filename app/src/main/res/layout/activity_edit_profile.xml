@@ -63,7 +63,7 @@
         app:layout_constraintVertical_bias="0.0" />
 
     <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/epconfirm"
+        android:id="@+id/Btn_next_quote"
         android:layout_width="150dp"
         android:layout_height="40dp"
         android:background="@drawable/custom_input_2"
@@ -72,10 +72,10 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintHorizontal_bias="0.681"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/epchangepassword"
-        app:layout_constraintVertical_bias="0.046" />
+        app:layout_constraintVertical_bias="0.105" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/epback"
@@ -87,10 +87,10 @@
         android:textSize="14dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.685"
+        app:layout_constraintHorizontal_bias="0.681"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/epchangepassword"
-        app:layout_constraintVertical_bias="0.276" />
+        app:layout_constraintTop_toBottomOf="@+id/Btn_next_quote"
+        app:layout_constraintVertical_bias="0.169" />
 
     <TextView
         android:id="@+id/epchangepassword"

@@ -68,7 +68,7 @@ public class EditProfile extends AppCompatActivity {
 
         newUserName = findViewById(R.id.epname);
         newUserEmail = findViewById(R.id.epemail);
-        save = findViewById(R.id.epconfirm);
+        save = findViewById(R.id.Btn_next_quote);
         updateProfilePic = findViewById(R.id.epimg);
         back = findViewById(R.id.epback);
         cpassword = findViewById(R.id.epchangepassword);

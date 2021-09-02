@@ -20,11 +20,12 @@
         android:layout_centerVertical="true"
         android:clickable="true"
         android:focusable="true"
-        android:paddingLeft="10dp"
-        android:paddingRight="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
         android:selectAllOnFocus="true"
         android:text="Quotes"
-        android:textAlignment="inherit"
+        android:textAlignment="center"
+        android:fontFamily="@font/fjord_one"
         android:textColor="@android:color/black"
         android:textIsSelectable="true"
         android:textSize="18sp"
@@ -32,5 +33,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Btn_next_quote"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input_2"
+        android:text="next"
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.893"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -9,22 +9,18 @@
         <item>Chores</item>
     </string-array>
 
-    <string-array name="quotes">
-        //Elbert Hubbard
-        <item>"Positive anything is better than negative nothing.”</item>
-        <item>"Your friend is the man who knows all about you and still likes you."</item>
-        <item>"To avoid criticism, do nothing, say nothing, and be nothing."</item>
-
-        //Bernhard Berenson
-        <item>“Miracles happen to those who believe in them.”</item>
-        <item>"A complete life may be one ending in so full an identification with the oneself that there is no self left to die."</item>
-        <item>"Consistency requires you to be as ignorant today as you were a year ago."</item>
-    </string-array>
-
-    <string-array name="authors">
-        <item>-Elbert Hubbard</item>
-        <item>-Bernhard Berenson</item>
-    </string-array>
+    <string name="quote1">“Technology is best when it brings people together.” \n <b>- Matt Mullenweg, Social Media Entrepreneur</b></string>
+    <string name="quote2">“It has become appallingly obvious that our technology has exceeded our humanity.” \n <b>- Albert Einstein, Scientist</b></string>
+    <string name="quote3">“It is only when they go wrong that machines remind you how powerful they are.” \n <b>- Clive James, Broadcaster and Journalist.</b></string>
+    <string name="quote4">“The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.” \n <b>- Tim Berners-Lee, Inventor of the World Wide Web.</b></string>
+    <string name="quote5"> “If it keeps up, man will atrophy all his limbs but the push-button finger.” \n  <b>- Frank Lloyd Wright, Architect</b></string>
+    <string name="quote6">“If future generations are to remember us more with gratitude than sorrow, we \n must achieve more than just the miracles of technology.
+                        We must also leave them a glimpse of the world as \n it was created, not just as it looked when we got through with it.”
+                        \n <b>- Lyndon B. Johnson, Former President of the United States of America</b></string>
+    <string name="quote7">“Once a new technology rolls over you, if you are not part of the steamroller, you are part of the road.” \n <b>- Stewart Brand, Writer</b></string>
+    <string name="quote8">“Its not a faith in technology. Its faith in people.” \n <b>- Steve Jobs, Co-founder of Apple.</b></string>
+    <string name="quote9">“Technology is a useful servant but a dangerous master.” \n <b>- Christian Lous Lange, Historian</b></string>
+    <string name="quote10">“The advance of technology is based on making it fit in so that you dont really even notice it, so its part of everyday life.” \n <b>- Bill Gates, Co-founder of Microsoft.</b></string>
 
 
 </resources>
