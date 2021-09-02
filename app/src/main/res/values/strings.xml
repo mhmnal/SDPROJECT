@@ -9,4 +9,22 @@
         <item>Chores</item>
     </string-array>
 
+    <string-array name="quotes">
+        //Elbert Hubbard
+        <item>"Positive anything is better than negative nothing.”</item>
+        <item>"Your friend is the man who knows all about you and still likes you."</item>
+        <item>"To avoid criticism, do nothing, say nothing, and be nothing."</item>
+
+        //Bernhard Berenson
+        <item>“Miracles happen to those who believe in them.”</item>
+        <item>"A complete life may be one ending in so full an identification with the oneself that there is no self left to die."</item>
+        <item>"Consistency requires you to be as ignorant today as you were a year ago."</item>
+    </string-array>
+
+    <string-array name="authors">
+        <item>-Elbert Hubbard</item>
+        <item>-Bernhard Berenson</item>
+    </string-array>
+
+
 </resources>
