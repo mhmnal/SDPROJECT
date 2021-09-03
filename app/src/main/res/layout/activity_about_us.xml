@@ -20,4 +20,30 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.12" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="347dp"
+        android:layout_height="191dp"
+        android:text="         We are a group of six student Diploma In Science Computer from Universiti Teknologi Malaysia. We explore the world of information technology and try to create a system suitable with the world modernization. As world are moving toward Industrial Revolution 4.0 where technology is a basic and used in every sector even our daily life we try to came up with idea that will be useful for this new era."
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        app:layout_constraintVertical_bias="0.045"
+        tools:fontFamily="@font/fjord_one" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="348dp"
+        android:layout_height="239dp"
+        android:text="          We created Habit Tracking System due to several reason. One of them was the technology advancement nowadays cause human to lost track of their time, sleep, efficiency due to spending too much time infront of the technology such as social media and games. Habit tracker System will serve as your personal assistant in assisting user keep track on what they are doing and even suggest what best for them to help improve their quality of life. Alongside that it even help users improve their time management much more efficiently. "
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        app:layout_constraintVertical_bias="0.07"
+        tools:fontFamily="@font/fjord_one" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
