@@ -7,85 +7,141 @@
     tools:context=".CreateHabit"
     android:background="@color/softwhite1">
 
-    <TextView
-        android:id="@+id/tvcrhabit"
-        android:layout_width="240dp"
-        android:layout_height="50dp"
-        android:background="@drawable/custom_input"
-        android:fontFamily="@font/fjord_one"
-        android:paddingTop="2dp"
-        android:gravity="center"
-        android:paddingBottom="1dp"
-        android:text="CREATE HABIT"
-        android:textSize="24dp"
-        android:textColor="@color/black"
-        app:backgroundTint="@color/softwhite1"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.038" />
 
-    <TextView
-        android:id="@+id/tvHabitName"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Name"
-        android:textSize="16sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.054"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvcrhabit"
-        app:layout_constraintVertical_bias="0.025" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="100dp">
 
-    <EditText
-        android:id="@+id/etHabitName"
-        android:layout_width="250dp"
-        android:layout_height="50dp"
-        android:background="@drawable/custom_input"
-        android:drawablePadding="8dp"
-        android:ems="10"
-        android:textSize= "20dp"
-        android:fontFamily="@font/fjord_one"
-        android:hint="Name"
-        android:inputType="textPersonName"
-        android:paddingStart="12dp"
-        android:paddingEnd="12dp"
-        android:textColor="#F5F5DC"
-        android:textColorHint="#F5F5DC"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.124"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tvHabitName"
-        app:layout_constraintVertical_bias="0.0" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvcrhabit"
+                android:layout_width="240dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/custom_input"
+                android:fontFamily="@font/dolcevitoheavybold"
+                android:gravity="center"
+                android:paddingTop="2dp"
+                android:paddingBottom="1dp"
+                android:text="CREATE HABIT"
+                android:textColor="@color/black"
+                android:textSize="40dp"
+                app:backgroundTint="@color/softwhite1"
+                android:layout_gravity="center_horizontal"
+                 />
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="Name"
+                android:fontFamily="@font/romonolight"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+
+                android:layout_marginTop="60dp"/>
+
+            <EditText
+                android:id="@+id/etHabitName"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:background="@drawable/custom_input"
+                android:drawablePadding="8dp"
+                android:ems="10"
+                android:layout_gravity="left"
+                android:layout_marginLeft="20dp"
+                android:fontFamily="@font/fjord_one"
+                android:hint="Name"
+                android:inputType="textPersonName"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
+                android:textColor="#F5F5DC"
+                android:textColorHint="@color/softwhite2"
+                android:textSize="14dp"
+       />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="Choose Habit type"
+                android:textSize="20dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/romonolight"
+                android:textStyle="bold"
+
+                />
+            <Spinner
+                android:id="@+id/spinner"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/custom_input"
+                tools:layout_editor_absoluteX="74dp"
+                tools:layout_editor_absoluteY="227dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:text="Motivational quotes here"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:fontFamily="@font/romonolight"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/motivquote"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginHorizontal="20dp"
+                android:background="@drawable/custom_input"
+                android:inputType="textMultiLine"
+                android:hint="Insert good things only!"
+                android:gravity="top"
+                android:paddingTop="5dp"
+                android:paddingStart="12dp"
+                android:maxLines="7"
+                android:textColor="@color/softwhite1"
+                android:textColorHint="@color/softwhite2"
+                android:fontFamily="@font/fjord_one"
+                android:textSize="14dp"/>
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnCreateHabit"
         android:layout_width="150dp"
         android:layout_height="40dp"
+        android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
         android:text="confirm"
         android:textColor="@color/black"
-        android:background="@drawable/custom_input_2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.938"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.899" />
+        app:layout_constraintVertical_bias="0.976" />
 
-    <Spinner
-        android:id="@+id/spinner"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:layout_marginHorizontal="20dp"
 
-        android:background="@drawable/custom_input"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.27" />
+
+
 </androidx.constraintlayout.widget.ConstraintLayout>

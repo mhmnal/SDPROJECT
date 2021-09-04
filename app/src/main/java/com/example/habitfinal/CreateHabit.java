@@ -28,9 +28,9 @@ public class CreateHabit extends AppCompatActivity /*implements AdapterView.OnIt
 
     private ArrayList<TypeItem> mTypeList;
     private TypeAdapter mAdapter;
-    private EditText namehabit ;
+    private EditText namehabit, motiv ;
     private Button createhabit;
-    String name, nameHabit;
+    String name, nameHabit, moTiv;
     private Spinner spinn;
     private String clickedType;
     private DatabaseReference databaseReference;
@@ -44,6 +44,7 @@ public class CreateHabit extends AppCompatActivity /*implements AdapterView.OnIt
         initList();
         namehabit = findViewById(R.id.etHabitName);
         createhabit = findViewById(R.id.btnCreateHabit);
+        motiv = findViewById(R.id.motivquote);
         spinn = findViewById(R.id.spinner);
 
         mAdapter = new TypeAdapter(this, mTypeList);
@@ -87,10 +88,12 @@ public class CreateHabit extends AppCompatActivity /*implements AdapterView.OnIt
                 databaseReference = FirebaseDatabase.getInstance().getReference("Habit").child(name).push();
 
                 nameHabit = namehabit.getEditableText().toString().trim();
+                moTiv = motiv.getEditableText().toString().trim();
 
                 cHabitInfo chabitinfo = new cHabitInfo();
                 chabitinfo.setNameHabit(nameHabit);
                 chabitinfo.setText1(clickedType);
+                chabitinfo.setMotiv(moTiv);
                 databaseReference.setValue(chabitinfo);
 
                 startActivity(new Intent(CreateHabit.this,DashboardActivity.class));

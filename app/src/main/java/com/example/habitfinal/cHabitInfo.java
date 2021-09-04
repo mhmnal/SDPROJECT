@@ -5,19 +5,21 @@ import android.os.Parcelable;
 
 public class cHabitInfo implements Parcelable {
 
-    String nameHabit,  text1;
+    String nameHabit,  text1, motiv;
 
     public cHabitInfo(){
     }
 
-    public cHabitInfo(String nameHabit, String text1 )  {
+    public cHabitInfo(String nameHabit, String text1 ,String motiv)  {
         this.nameHabit = nameHabit;
         this.text1 = text1;
+        this.motiv = motiv;
     }
 
     protected cHabitInfo(Parcel in) {
         nameHabit = in.readString();
         text1 = in.readString();
+        motiv = in.readString();
     }
 
     public static final Creator<cHabitInfo> CREATOR = new Creator<cHabitInfo>() {
@@ -48,6 +50,14 @@ public class cHabitInfo implements Parcelable {
         this.text1 = text1;
     }
 
+    public String getMotiv() {
+        return motiv;
+    }
+
+    public void setMotiv(String motiv) {
+        this.motiv = motiv;
+    }
+
     @Override
     public int describeContents() {
         return 0;
@@ -57,5 +67,6 @@ public class cHabitInfo implements Parcelable {
     public void writeToParcel(Parcel parcel, int i) {
         parcel.writeString(nameHabit);
         parcel.writeString(text1);
+        parcel.writeString(motiv);
     }
 }
