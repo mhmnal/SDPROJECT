@@ -1,6 +1,8 @@
 package com.example.habitfinal;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -10,6 +12,7 @@ import java.util.Random;
 
 public class Lesson extends AppCompatActivity {
 
+    private Button back;
     Random random = new Random();
     TextView textQuot;
     Button buttonQuot;
@@ -21,6 +24,14 @@ public class Lesson extends AppCompatActivity {
 
         textQuot = findViewById(R.id.quotes_textview);
         buttonQuot = findViewById(R.id.Btn_next_quote);
+        back = findViewById(R.id.shback4);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(Lesson.this, DashboardActivity.class));
+            }
+        });
 
         buttonQuot.setOnClickListener(new View.OnClickListener() {
             @Override

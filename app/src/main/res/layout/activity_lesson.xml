@@ -9,6 +9,21 @@
     android:background="@color/softwhite1"
     tools:context=".Lesson">
 
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/shback4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:background="@drawable/custom_input_2"
+        android:fontFamily="@font/fjord_one"
+        android:text="back"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.937" />
+
     <TextView
         android:id="@+id/quotes_textview"
         android:layout_width="wrap_content"

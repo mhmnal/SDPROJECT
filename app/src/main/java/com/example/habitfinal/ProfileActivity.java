@@ -46,6 +46,7 @@ public class ProfileActivity extends AppCompatActivity {
 
         signout = findViewById(R.id.btnsignout);
         profilePic = findViewById(R.id.imgpa);
+        back = findViewById(R.id.shback2);
         profileName = findViewById(R.id.etnamepa);
         profileEmail = findViewById(R.id.etemailpa);
         profileUpdate = findViewById(R.id.pfeditprofile);
@@ -93,6 +94,7 @@ public class ProfileActivity extends AppCompatActivity {
             }
         });
 
+
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -107,6 +109,13 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ProfileActivity.this, EditProfile.class));
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ProfileActivity.this, DashboardActivity.class));
             }
         });
 
