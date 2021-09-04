@@ -17,22 +17,24 @@ import java.util.ArrayList;
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     Context context;
-
+    private OnListListener mOnListListener;
 
 
     ArrayList<cHabitInfo> list;
 
-    public MyAdapter(Context context, ArrayList<cHabitInfo> list) {
+    public MyAdapter(Context context, ArrayList<cHabitInfo> list, OnListListener onListListener) {
         this.context = context;
         this.list = list;
+        this.mOnListListener = onListListener;
     }
+
 
 
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(context).inflate(R.layout.items,parent,false);
-        return new MyViewHolder(v);
+        return new MyViewHolder(v, mOnListListener);
     }
 
     @Override
@@ -51,22 +53,32 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         return list.size();
     }
 
-    public static class MyViewHolder extends RecyclerView.ViewHolder{
+    public static class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
 
         TextView namehabittrv;
         TextView habittype;
+        OnListListener onListListener;
 
 
-        public MyViewHolder(@NonNull View itemView) {
+        public MyViewHolder(@NonNull View itemView, OnListListener onListListener) {
             super(itemView);
 
             namehabittrv = itemView.findViewById(R.id.namehabitrv);
             habittype = itemView.findViewById(R.id.habittype);
+            this.onListListener = onListListener;
 
-
+            itemView.setOnClickListener(this);
         }
 
 
+        @Override
+        public void onClick(View view) {
+            onListListener.onListClick(getAdapterPosition());
+        }
+    }
+
+    public interface OnListListener{
+        void onListClick(int position);
     }
 
 

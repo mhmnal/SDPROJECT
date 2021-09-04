@@ -21,12 +21,18 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class CreateHabit extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
+import java.lang.reflect.Type;
+import java.util.ArrayList;
 
+public class CreateHabit extends AppCompatActivity /*implements AdapterView.OnItemSelectedListener */{
+
+    private ArrayList<TypeItem> mTypeList;
+    private TypeAdapter mAdapter;
     private EditText namehabit ;
     private Button createhabit;
-    String name, nameHabit,text1;
+    String name, nameHabit;
     private Spinner spinn;
+    private String clickedType;
     private DatabaseReference databaseReference;
     private FirebaseAuth firebaseAuth;
 
@@ -35,14 +41,28 @@ public class CreateHabit extends AppCompatActivity implements AdapterView.OnItem
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_create_habit);
 
+        initList();
         namehabit = findViewById(R.id.etHabitName);
         createhabit = findViewById(R.id.btnCreateHabit);
         spinn = findViewById(R.id.spinner);
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.planets_array, android.R.layout.simple_spinner_item);
-        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        spinn.setAdapter(adapter);
-        spinn.setOnItemSelectedListener(this);
+        mAdapter = new TypeAdapter(this, mTypeList);
+        spinn.setAdapter(mAdapter);
+
+        spinn.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
+            @Override
+            public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
+                TypeItem clickedItem = (TypeItem) adapterView.getItemAtPosition(i);
+                clickedType = clickedItem.getTypeName();
+                Toast.makeText(CreateHabit.this, clickedType + " selected", Toast.LENGTH_SHORT).show();
+            }
+
+            @Override
+            public void onNothingSelected(AdapterView<?> adapterView) {
+
+            }
+        });
+
 
         firebaseAuth = FirebaseAuth.getInstance();
         DatabaseReference reference2 = FirebaseDatabase.getInstance().getReference("UserInfo").child(firebaseAuth.getUid());
@@ -67,9 +87,10 @@ public class CreateHabit extends AppCompatActivity implements AdapterView.OnItem
                 databaseReference = FirebaseDatabase.getInstance().getReference("Habit").child(name).push();
 
                 nameHabit = namehabit.getEditableText().toString().trim();
+
                 cHabitInfo chabitinfo = new cHabitInfo();
                 chabitinfo.setNameHabit(nameHabit);
-                chabitinfo.setText1(text1);
+                chabitinfo.setText1(clickedType);
                 databaseReference.setValue(chabitinfo);
 
                 startActivity(new Intent(CreateHabit.this,DashboardActivity.class));
@@ -79,6 +100,18 @@ public class CreateHabit extends AppCompatActivity implements AdapterView.OnItem
 
 
     }
+
+    private void initList() {
+        mTypeList = new ArrayList<>();
+        mTypeList.add(new TypeItem("Example"));
+        mTypeList.add(new TypeItem("Example"));
+        mTypeList.add(new TypeItem("Example"));
+        mTypeList.add(new TypeItem("Example"));
+        mTypeList.add(new TypeItem("Example"));
+        mTypeList.add(new TypeItem("Example"));
+        mTypeList.add(new TypeItem("Example"));
+    }
+
 
     private boolean validate() {
         Boolean result = false;
@@ -95,15 +128,5 @@ public class CreateHabit extends AppCompatActivity implements AdapterView.OnItem
     }
 
 
-    @Override
-    public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-        text1 = adapterView.getItemAtPosition(i).toString();
-        Toast.makeText(adapterView.getContext(),text1,Toast.LENGTH_SHORT);
 
-    }
-
-    @Override
-    public void onNothingSelected(AdapterView<?> adapterView) {
-
-    }
 }

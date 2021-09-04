@@ -46,6 +46,7 @@
         android:background="@drawable/custom_input"
         android:drawablePadding="8dp"
         android:ems="10"
+        android:textSize= "20dp"
         android:fontFamily="@font/fjord_one"
         android:hint="Name"
         android:inputType="textPersonName"

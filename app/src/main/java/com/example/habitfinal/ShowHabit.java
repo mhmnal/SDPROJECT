@@ -26,7 +26,7 @@ import org.w3c.dom.Text;
 
 import java.util.ArrayList;
 
-public class ShowHabit extends AppCompatActivity{
+public class ShowHabit extends AppCompatActivity implements MyAdapter.OnListListener{
 
     String name,habittype;
     private Button back;
@@ -75,7 +75,7 @@ public class ShowHabit extends AppCompatActivity{
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         list = new ArrayList<>();
-        myAdapter = new MyAdapter(this, list);
+        myAdapter = new MyAdapter(getBaseContext(), list, this);
         recyclerView.setAdapter(myAdapter);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
@@ -98,4 +98,11 @@ public class ShowHabit extends AppCompatActivity{
     }
 
 
+    @Override
+    public void onListClick(int position) {
+
+        Intent intent = new Intent(this, SpecificHabit.class);
+        intent.putExtra("Example", list.get(position));
+        startActivity(intent);
+    }
 }
