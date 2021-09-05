@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Habitfinal">
+        <activity android:name=".Reflection"></activity>
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="true" />
@@ -33,14 +34,15 @@
         <activity
             android:name=".ProfileActivity"
             android:exported="true" />
-        <activity android:name=".Lesson"
+        <activity
+            android:name=".Lesson"
             android:exported="true" />
         <activity
             android:name=".AboutUs"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".ContactUs"
-            android:exported="true"/>
+            android:exported="true" />
         <activity android:name=".DashboardActivity" />
         <activity android:name=".RegisterActivity" />
         <activity android:name=".MainActivity">

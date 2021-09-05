@@ -7,18 +7,20 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class AboutUs extends AppCompatActivity {
+public class Reflection extends AppCompatActivity {
     private Button back;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState){
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about_us);
+        setContentView(R.layout.activity_reflection);
+
         back = findViewById(R.id.shback7);
 
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(AboutUs.this, DashboardActivity.class));
+                startActivity(new Intent(Reflection.this, DashboardActivity.class));
             }
         });
     }

@@ -13,7 +13,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class DashboardActivity extends AppCompatActivity {
 
-    private Button profile,createhabit,listhabit,lesson,aboutus,contactus;
+    private Button profile,createhabit,listhabit,lesson,aboutus,contactus,reflection;
     private FirebaseAuth firebaseAuth;
 
     @Override
@@ -27,6 +27,7 @@ public class DashboardActivity extends AppCompatActivity {
         lesson = findViewById(R.id.btn_Lesson);
         aboutus = findViewById(R.id.btn_AboutUs);
         contactus = findViewById(R.id.btn_ContactUs);
+        reflection = findViewById(R.id.btn_Reflection);
 
 
         firebaseAuth = FirebaseAuth.getInstance();
@@ -44,6 +45,13 @@ public class DashboardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(DashboardActivity.this, CreateHabit.class));
+            }
+        });
+
+        reflection.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DashboardActivity.this, Reflection.class));
             }
         });
 

@@ -29,7 +29,7 @@ public class CreateHabit extends AppCompatActivity /*implements AdapterView.OnIt
     private ArrayList<TypeItem> mTypeList;
     private TypeAdapter mAdapter;
     private EditText namehabit, motiv ;
-    private Button createhabit;
+    private Button createhabit, back;
     String name, nameHabit, moTiv;
     private Spinner spinn;
     private String clickedType;
@@ -46,6 +46,7 @@ public class CreateHabit extends AppCompatActivity /*implements AdapterView.OnIt
         createhabit = findViewById(R.id.btnCreateHabit);
         motiv = findViewById(R.id.motivquote);
         spinn = findViewById(R.id.spinner);
+        back = findViewById(R.id.shback6);
 
         mAdapter = new TypeAdapter(this, mTypeList);
         spinn.setAdapter(mAdapter);
@@ -61,6 +62,13 @@ public class CreateHabit extends AppCompatActivity /*implements AdapterView.OnIt
             @Override
             public void onNothingSelected(AdapterView<?> adapterView) {
 
+            }
+        });
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CreateHabit.this, DashboardActivity.class));
             }
         });
 

@@ -14,13 +14,22 @@ import android.widget.TextView;
 public class ContactUs extends AppCompatActivity {
 
     ImageButton androidImageButton;
-
+    private Button back;
     Button buttonCall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_contact_us);
+
+        back = findViewById(R.id.shback8);
+
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ContactUs.this, DashboardActivity.class));
+            }
+        });
 
         TextView email = (TextView) findViewById(R.id.tv_habitcom);
         email.setText(Html.fromHtml("<a href=\"mailto:HabitSmart@gmail.com\">HabitSmart@gmail.com</a>"));
