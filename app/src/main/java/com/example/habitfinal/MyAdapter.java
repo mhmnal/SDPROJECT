@@ -12,6 +12,8 @@ import androidx.annotation.NonNull;
 import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
+import org.w3c.dom.Text;
+
 import java.util.ArrayList;
 
 public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
@@ -57,6 +59,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
         TextView namehabittrv;
         TextView habittype;
+        TextView motiv;
         OnListListener onListListener;
 
 
@@ -65,6 +68,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
             namehabittrv = itemView.findViewById(R.id.namehabitrv);
             habittype = itemView.findViewById(R.id.habittype);
+            motiv = itemView.findViewById(R.id.motivquote);
             this.onListListener = onListListener;
 
             itemView.setOnClickListener(this);

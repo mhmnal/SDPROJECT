@@ -8,9 +8,26 @@
     android:background="@color/softwhite1">
 
     <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_Reflection"
+        android:layout_width="123dp"
+        android:layout_height="76dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/custom_input_2"
+        android:fontFamily="@font/fjord_one"
+        android:text="Reflection"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.766" />
+
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnprofile"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
+        android:layout_width="123dp"
+        android:layout_height="76dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
@@ -22,12 +39,12 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/dbCreateHabit"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
+        android:layout_width="123dp"
+        android:layout_height="76dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
@@ -36,15 +53,15 @@
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.116"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.659" />
+        app:layout_constraintVertical_bias="0.561" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_ContactUs"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
+        android:layout_width="123dp"
+        android:layout_height="76dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
@@ -53,15 +70,15 @@
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="0.558"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.958" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_Lesson"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
+        android:layout_width="123dp"
+        android:layout_height="76dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
@@ -70,15 +87,15 @@
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.119"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.659" />
+        app:layout_constraintVertical_bias="0.561" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btn_AboutUs"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
+        android:layout_width="123dp"
+        android:layout_height="76dp"
         android:layout_marginEnd="30dp"
         android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
@@ -90,12 +107,12 @@
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.918" />
+        app:layout_constraintVertical_bias="0.766" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/listhabit"
-        android:layout_width="130dp"
-        android:layout_height="140dp"
+        android:layout_width="123dp"
+        android:layout_height="76dp"
         android:layout_marginStart="30dp"
         android:background="@drawable/custom_input_2"
         android:fontFamily="@font/fjord_one"
@@ -107,20 +124,20 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.385" />
+        app:layout_constraintVertical_bias="0.348" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/dolcevita"
-        android:text="Dashboard W.I.P"
+        android:text="Smart Habit"
         android:textColor="@color/black"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.248"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
+        app:layout_constraintVertical_bias="0.127" />
 </androidx.constraintlayout.widget.ConstraintLayout>
